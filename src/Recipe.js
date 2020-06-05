@@ -27,18 +27,16 @@ const CaptionBanner = styled.div`
 
 
 
-const Recipe = ({ }) => {
+const Recipe = () => {
     var [isRecipeDetails, setRecipeDetails] = useState(false);
     var [recipeIndex, setRecipeIndex] = useState(0);
     var [eachRecipe, setEachRecipe] = useState('');
 
     var handleRecipeDetails = (eachRecipe, recipeIndex) => {
         setRecipeDetails(true);
-        console.log("eachReciepe", eachRecipe);
-        console.log("recipeIndex ", recipeIndex);
+
         setRecipeIndex(recipeIndex);
         setEachRecipe(eachRecipe);
-        // console.log("index of food ", index);
     }
 
     const [recipes, setRecipes] = useState([]);
@@ -48,7 +46,6 @@ const Recipe = ({ }) => {
 
     const APP_ID = 'f7be027e';
     const APP_KEY = '38555891ce91633ed9569bbda9c382b4';
-    // const exampleRequest = `https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=3&calories=591-722&health=alcohol-free`;
 
 
     useEffect(() => {
@@ -58,8 +55,6 @@ const Recipe = ({ }) => {
     const getRecipes = async () => {
         const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`)
         const data = await response.json();
-        console.log("data: ", data);
-        console.log("response: ", response);
         setRecipes(data.hits)
     }
 
@@ -92,8 +87,13 @@ const Recipe = ({ }) => {
 
     return (
         <div className="recipe-wrap">
-               
-                    
+            <div className="content-sidebar-wrap flex-container">
+                {isRecipeDetails ?
+                    <div>
+                        <RecipeDetails
+                            eachRecipe={eachRecipe}
+                            recipeIndex={recipeIndex} />
+                    </div> :
                     <div >
                         {displaySearchBar()}
                         <div className="main-content-wrap flex-container">
@@ -115,12 +115,8 @@ const Recipe = ({ }) => {
                         )
                         )}
                         </div>
-                    
-
-                
-
-
-
+                    </div>
+                }
             </div>
         </div>
     );

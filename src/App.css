@@ -87,8 +87,28 @@
 /***********************/
 /* Recipe Details
 /***********************/
+.recipe-details-header-content {
+  transform: translateY(-100px);
+  width: 80%;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.recipe-details-header-content h2{
+  font-family: 'Dosis',sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: lowercase;
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
+  margin-top: 0;
+}
+
 .recipe-details-container {
   margin-top: 110px;
+  border: 5px solid #6d3c5c;
 }
 .recipe-details-container header{
   background-color: #6d3c5c;
@@ -102,6 +122,23 @@
     border-radius: 92.5px;
     border: 5px solid #6d3c5c;
     width: 185px;
+}
+
+/* .recipes-details-list ul{
+  list-style-type: none;
+  font-size: 16px;
+    line-height: 40px;
+} */
+
+ul.recipes-details-list {
+  list-style-type: none;
+  font-size: 16px;
+  line-height: 40px;
+}
+li.recipe-detail-header-healthlabels{
+  font-style: italic;
+  color: #b39aa7;
+  margin-right: 2px;
 }
 
 .recipe-details-image{
