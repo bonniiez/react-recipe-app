@@ -1,5 +1,7 @@
-### Demo
-Link to Demo App [here](https://bonniiez.github.io/react-recipe-app/) 
+## Demo
+Link to Demo App **[here]**(https://bonniiez.github.io/react-recipe-app/) 
+
+<hr/>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
