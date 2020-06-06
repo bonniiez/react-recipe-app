@@ -1,5 +1,5 @@
 ## Demo
-Link to Demo App **[here]**(https://bonniiez.github.io/react-recipe-app/) 
+Link to Demo App [here](https://bonniiez.github.io/react-recipe-app/) 
 
 <hr/>
 
