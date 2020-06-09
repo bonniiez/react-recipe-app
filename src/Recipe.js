@@ -34,7 +34,6 @@ const Recipe = () => {
 
     var handleRecipeDetails = (eachRecipe, recipeIndex) => {
         setRecipeDetails(true);
-
         setRecipeIndex(recipeIndex);
         setEachRecipe(eachRecipe);
     }
@@ -73,7 +72,7 @@ const Recipe = () => {
     const displaySearchBar = () => {
         return (
             <form onSubmit={getSearch} className="search-form">
-                <input className="search-bar" value={search} type="textbox" onChange={updateSearch} />
+                <input className="search-bar" value={search} type="textbox" onChange={updateSearch} placeholder="Enter an ingredient or a dish name"/>
                 <button
                     className="search-button"
                     type="submit">
