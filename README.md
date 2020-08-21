@@ -3,6 +3,18 @@ Link to Demo App [here](https://bonniiez.github.io/react-recipe-app/)
 
 <hr/>
 
+Simple food application with React, JS, CSS, HTML and Edamam API.
+This app can help you search millions of recipes from around the world from its database. This app can also help you do nutritional analysis on your favourite recipes or its ingredients.
+
+Plans for future development
+* Build UI functionality for:
+    * Adding a new recipe
+    * Deleting existing recipes
+    * Updating existing recipes
+    * Creating user accounts
+
+<hr/>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
